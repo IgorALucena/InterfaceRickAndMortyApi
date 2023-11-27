@@ -1,0 +1,222 @@
+@font-face {
+    font-family: minhaFonte;
+    src: url(../complementos/get_schwifty.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: minhaFonte;
+    background-color: #02afc5;
+    border-radius: 0.5rem;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#lista {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.lor {
+    padding: 30px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    margin: 4px;
+    background-color: #aee660;
+}
+
+.lor input {
+    background-color: #aee660;
+    border: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+    left: 5px;
+}
+
+.lor input:hover {
+    transform: scale(1.1);
+}
+
+.ti {
+    display: flex;
+    justify-content: space-between;
+    background-color: #35c9dd;
+    margin-bottom: 50px;
+}
+
+#busca-container {
+    background-color: #35c9dd;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#busca {
+    height: 50px;
+    border-radius: 10px;
+    width: 215px;
+    border-color: #aee660;
+    font-size: larger;
+    margin-right: 10px;
+}
+
+#confirma {
+    height: 50px;
+    border-radius: 10px;
+    width: 60px;
+    font-size: larger;
+    border-color: #aee660;
+}
+
+.nome {
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+.logo {
+    width: 200px;
+    margin: 20px;
+    background-color: #35c9dd;
+}
+
+li {
+    transition: transform 0.5s ease;
+    border-radius: 75px;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+.personagens {
+    border-radius: 17px;
+}
+
+.inicio {
+    height: 50px;
+    position: relative;
+    left: 600px;
+    top: 30px;
+    border-radius: 10px;
+    width: 100px;
+    font-size: larger;
+    border-color: #aee660;
+}
+
+#voltar {
+    height: 50px;
+    position: relative;
+    border-radius: 10px;
+    width: 60px;
+    font-size: larger;
+    border-color: #aee660;
+    bottom: 28px;
+    left: 5px;
+
+}
+
+button:hover {
+    opacity: 1;
+
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 90%;
+    background-color: #aee660;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+#fade,
+#modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
+
+#titulo-modal {
+    position: relative;
+    top: 9px;
+}
+
+#close-modal {
+    border-radius: 10px;
+    width: 50px;
+    font-size: small;
+    border-color: #aee660;
+    position: relative;
+    top: 9px
+}
+
+#proxima,
+#anterior {
+    border-radius: 10px;
+    width: 215px;
+    border-color: #aee660;
+
+}
+
+#botoesP {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+
+}

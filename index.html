@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./programa/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <header class="ti">
+      <img class="logo" src="./complementos/Rick_and_Morty_logo_PNG3.png">
+      <div id="busca-container">
+        <input type="text" id="busca">
+        <button id="confirma" type="submit" onclick="botaoBuscar()">Search</button>
+      </div>
+    </header>
+    <section class="container">
+      <div id="botaoVoltar"></div>
+      <ul id="lista"></ul>
+      <div id="fade" class="hide"></div>
+      <div id="modal" class="hide">
+        <div class="modal-header">
+          <h2 id="titulo-modal"></h2>
+          <button id="close-modal" onclick="fechar()">Close</button>
+        </div>
+        <div class="modal-body">
+          <p id="status">
+          </p>
+          <p id="species">
+          </p>
+          <p id="gender">
+          </p>
+          <p id="location">
+          </p>
+        </div>
+      </div>
+      <div id="botoesP">
+        <button id="anterior" onclick="paginaAnterior()">Previous</button>
+        <button id="proxima" onclick="proximaPagina()">Next</button>
+      </div>
+    </section>
+    
+  </main>
+  <script src="./programa/script.js"></script>
+</body>
+
+</html>
