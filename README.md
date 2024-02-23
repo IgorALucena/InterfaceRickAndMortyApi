@@ -18,4 +18,4 @@ The project in question aimed to understand the consumption of API with Javascri
 
 ### See how it turned out: 
 
-- https://igoralucena.github.io/fetchApi/
+- https://igoralucena.github.io/InterfaceRickAndMortyApi/
